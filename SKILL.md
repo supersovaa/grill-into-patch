@@ -30,6 +30,16 @@ Number grill questions sequentially as `Q1`, `Q2`, and so on.
 Restart numbering at `Q1` for each chat.
 Give a recommended answer with every question.
 
+Present answer choices for every grill question.
+If the decision can be fully answered as yes or no, label the choices `Y` and `N`.
+Otherwise, label the choices `A`, `B`, `C`, and so on as needed.
+Do not use any other choice-label scheme.
+
+Write every choice so its meaning is clear from the choice text alone.
+For `Y` and `N` choices in particular, avoid abstract wording such as "do so" or "do not do so".
+State the concrete action or outcome in each choice, such as "Update the README to document the behavior" or "Leave the README unchanged".
+The recommended answer must identify one of the presented choice labels.
+
 A decision is settled when the conversation leaves only one valid conclusion.
 Do not require an explicit confirmation phrase when the conclusion is already unique.
 
