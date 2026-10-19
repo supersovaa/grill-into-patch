@@ -20,7 +20,7 @@ Keep tracking that latest state throughout the session.
 
 ## Grill
 
-Resolve every user decision needed to make the intended repository change unambiguous.
+After addressing each user response, reconcile the currently effective decisions and ask the next eligible unresolved question until the grill is complete.
 
 Map decisions by dependency.
 Ask only questions whose prerequisites are already settled.
