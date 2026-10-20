@@ -20,7 +20,7 @@ Keep tracking that latest state throughout the session.
 
 ## Grill
 
-Resolve every user decision needed to make the intended repository change unambiguous. After each user response, reconcile current decisions and identify any further user decisions needed, including those not yet asked. While any remain, end the same response with the next eligible unresolved grill question.
+Resolve every user decision needed to make the intended repository change unambiguous. After each user response, reconcile currently effective decisions and identify further decisions needed, including those not yet asked. Complete the response by asking the next eligible unresolved grill question while any remain, or by proceeding to the patch artifact once none remain, subject to any explicit user request to defer artifact generation. Progress reports support one of these outcomes rather than replace it.
 
 Map decisions by dependency.
 Ask only questions whose prerequisites are already settled.
