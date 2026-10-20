@@ -20,7 +20,7 @@ Keep tracking that latest state throughout the session.
 
 ## Grill
 
-Resolve every user decision needed to make the intended repository change unambiguous; after each user response, reconcile currently effective decisions and continue with the next eligible unresolved question until the grill is complete.
+Resolve every user decision needed to make the intended repository change unambiguous. After each user response, reconcile current decisions and identify any further user decisions needed, including those not yet asked. While any remain, end the same response with the next eligible unresolved grill question.
 
 Map decisions by dependency.
 Ask only questions whose prerequisites are already settled.
@@ -52,7 +52,7 @@ If following the newer state could change the meaning of a settled decision, con
 Include ancillary changes that are required to make settled decisions correct and internally consistent.
 If an ancillary change requires a new user decision, continue grilling instead of choosing silently.
 
-The grill is complete when no unresolved user decisions remain.
+The grill is complete only after assessing the full intended repository change for decisions still needed, including decisions not yet raised, and finding no unresolved user decision.
 At that point, proceed directly to artifact generation unless the user explicitly asked not to generate the artifact yet.
 
 ## Build the patch
