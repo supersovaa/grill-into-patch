@@ -1,6 +1,6 @@
 ---
 name: grill-into-patch
-description: Grill the user until a change to a GitHub repository is fully determined, then produce a verified changes.patch against the latest state of the user-specified target branch and package it in a zip file.
+description: Settle all user decisions for a GitHub change and deliver a ZIP containing a verified changes.patch against the latest commit on the user-specified branch.
 ---
 
 # Grill into Patch
@@ -11,9 +11,7 @@ Use this skill for a ChatGPT conversation whose purpose is to decide and deliver
 
 The user specifies the target repository and target branch.
 
-If the repository is already uniquely identified by the conversation, do not ask for it again.
-Never infer the target branch from a local or checked-out branch.
-Use only the branch specified by the user.
+Reuse the repository when the conversation uniquely identifies it. Take the target branch only from the user. A local checkout does not establish which branch the user selected.
 
 Treat the latest state of the target branch as the canonical source.
 Keep tracking that latest state throughout the session.
