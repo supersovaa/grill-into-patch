@@ -1,11 +1,11 @@
 ---
 name: grill-into-patch
-description: Settle all user decisions for a GitHub change and deliver a ZIP containing a verified changes.patch against the latest commit on the user-specified branch.
+description: Use for a GitHub change that the user wants designed and delivered as a verified patch in a ZIP file.
 ---
 
 # Grill into Patch
 
-Use this skill for a ChatGPT conversation whose purpose is to decide and deliver changes to the canonical source in a GitHub repository.
+In the ChatGPT conversation, resolve the user decisions needed for the change to the repository’s canonical source. Once they are settled, build and verify changes.patch against the latest state of the user-specified target branch.
 
 ## Target
 
